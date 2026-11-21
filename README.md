@@ -2,7 +2,9 @@
 
 A 327-question study app built from the MDC2 Module 5 (Acid–Base), MDC2 Module 6 (Upper GI & Nutrition) and NUR2474 Module 7 (Endocrine, Reproductive & Urinary Meds) lecture decks.
 
-Open `index.html` in any web browser. No install needed.
+**Live site:** https://j-bosque.github.io/NursePurse/
+
+Or open `index.html` in any web browser. No install needed.
 
 - **Practice**: multiple-choice quiz. Pick how many questions (5–50, all, or a custom number) and which modules.
 - **Topics**: choose one or more of 12 topics. Each card shows your accuracy so you can find weak spots.
