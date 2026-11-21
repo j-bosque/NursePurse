@@ -1,6 +1,6 @@
 # NursePurse Review
 
-A study app built from the MDC2 Module 5 (Acid–Base), MDC2 Module 6 (Upper GI & Nutrition) and NUR2474 Module 7 (Endocrine, Reproductive & Urinary Meds) lecture decks.
+A 327-question study app built from the MDC2 Module 5 (Acid–Base), MDC2 Module 6 (Upper GI & Nutrition) and NUR2474 Module 7 (Endocrine, Reproductive & Urinary Meds) lecture decks.
 
 Open `index.html` in any web browser. No install needed.
 

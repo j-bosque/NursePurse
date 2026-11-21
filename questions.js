@@ -553,3 +553,508 @@ Q('uri', 'What should the nurse monitor for mirabegron (an overactive bladder dr
 Q('uri', 'How should the nurse track urinary output in a client with a UTI?',
   ['Measure I&O; do not just count bathroom trips', 'Count bathroom trips only', 'Ask the client once a day', 'Weigh the client weekly'],
   'Push fluids unless restricted and report fever, chills or flank pain.');
+
+/* =====================================================================
+   EXPANSION SET (round 2): more questions per topic
+   ===================================================================== */
+
+/* ---------------- ABG INTERPRETATION (more) ---------------- */
+Q('abg', 'pH 7.30, PaCO₂ 50, HCO₃⁻ 30. Interpret.',
+  ['Partially compensated respiratory acidosis', 'Uncompensated respiratory acidosis', 'Partially compensated metabolic alkalosis', 'Fully compensated respiratory acidosis'],
+  'Low pH + high PaCO₂ = respiratory acidosis. HCO₃⁻ is high (kidneys holding base to help), but pH is still low: partial.');
+Q('abg', 'pH 7.44, PaCO₂ 30, HCO₃⁻ 20. Interpret.',
+  ['Fully compensated respiratory alkalosis', 'Fully compensated metabolic acidosis', 'Uncompensated respiratory alkalosis', 'Normal ABG'],
+  'pH is normal but on the alkaline side (above 7.40). Low PaCO₂ explains alkalosis = respiratory. Low HCO₃⁻ is the kidneys compensating.');
+Q('abg', 'pH 7.36, PaCO₂ 56, HCO₃⁻ 31. Interpret.',
+  ['Fully compensated respiratory acidosis', 'Fully compensated metabolic alkalosis', 'Partially compensated respiratory acidosis', 'Uncompensated metabolic alkalosis'],
+  'pH is normal but on the acidic side. High PaCO₂ explains acidosis = respiratory. High HCO₃⁻ is the kidneys compensating (common in chronic COPD).');
+Q('abg', 'pH 7.50, PaCO₂ 40, HCO₃⁻ 32. Interpret.',
+  ['Uncompensated metabolic alkalosis', 'Partially compensated metabolic alkalosis', 'Uncompensated respiratory alkalosis', 'Fully compensated metabolic alkalosis'],
+  'High pH + high HCO₃⁻ = metabolic alkalosis. PaCO₂ is normal, so the lungs have not compensated yet.');
+Q('abg', 'pH 7.43, PaCO₂ 49, HCO₃⁻ 33. Interpret.',
+  ['Fully compensated metabolic alkalosis', 'Fully compensated respiratory acidosis', 'Partially compensated metabolic alkalosis', 'Normal ABG'],
+  'pH is normal but on the alkaline side. High HCO₃⁻ explains alkalosis = metabolic. High PaCO₂ = the lungs slowing breathing to compensate.');
+Q('abg', 'pH 7.40, PaCO₂ 40, HCO₃⁻ 24. Interpret.',
+  ['Normal ABG', 'Fully compensated metabolic acidosis', 'Fully compensated respiratory alkalosis', 'Uncompensated respiratory acidosis'],
+  'All three values are inside their normal ranges.');
+Q('abg', 'pH 7.48, PaCO₂ 30, HCO₃⁻ 23. Interpret.',
+  ['Uncompensated respiratory alkalosis', 'Partially compensated respiratory alkalosis', 'Uncompensated metabolic alkalosis', 'Fully compensated respiratory alkalosis'],
+  'High pH + low PaCO₂ = respiratory alkalosis. HCO₃⁻ is normal, so no compensation yet.');
+Q('abg', 'pH 7.33, PaCO₂ 30, HCO₃⁻ 15. Interpret.',
+  ['Partially compensated metabolic acidosis', 'Uncompensated metabolic acidosis', 'Partially compensated respiratory alkalosis', 'Fully compensated metabolic acidosis'],
+  'Low pH + low HCO₃⁻ = metabolic acidosis. Low PaCO₂ = lungs compensating. pH is still below 7.35, so partial.');
+Q('abg', 'pH 7.22, PaCO₂ 60, HCO₃⁻ 24. Interpret.',
+  ['Uncompensated respiratory acidosis', 'Partially compensated respiratory acidosis', 'Uncompensated metabolic acidosis', 'Partially compensated metabolic acidosis'],
+  'Low pH + high PaCO₂ = respiratory acidosis. HCO₃⁻ is normal: the kidneys have not caught up yet (they take hours to days).');
+Q('abg', 'In a PRIMARY respiratory problem, how does PaCO₂ move compared with pH?',
+  ['In the opposite direction', 'In the same direction', 'It does not change', 'It always stays normal'],
+  'ROME: Respiratory = Opposite. pH down, PaCO₂ up (respiratory acidosis); pH up, PaCO₂ down (respiratory alkalosis).');
+Q('abg', 'After you find which value explains the pH, what is the next step in reading an ABG?',
+  ['Check whether the other value is responding (compensation)', 'Calculate the anion gap', 'Look at the PaO₂ first', 'Repeat the ABG'],
+  'Step 3: compare measured vs. expected. Abnormal does not automatically mean compensation.');
+Q('abg', 'The pH is normal and both PaCO₂ and HCO₃⁻ are abnormal. How do you tell which problem came first?',
+  ['Look at which side of 7.40 the pH sits on', 'The one with the bigger number', 'It is always metabolic', 'You cannot tell'],
+  'Below 7.40 points to the acidosis value; above 7.40 points to the alkalosis value. The body rarely overcorrects.');
+Q('abg', 'In step 4 of ABG reading ("back to the client"), which statement is true?',
+  ['A near-normal pH does not prove the client has recovered', 'A normal pH means you can stop assessing', 'Only the numbers matter, not the symptoms', 'Compensation always means the cause is gone'],
+  'Look at the cause, breathing, circulation and alertness together.');
+
+/* ---------------- ACID–BASE IMBALANCES (more) ---------------- */
+Q('ab', 'Which condition can cause respiratory ACIDOSIS?',
+  ['Pneumothorax or chest injury limiting chest expansion', 'Anxiety-related hyperventilation', 'Travel to high altitude', 'Excessive mechanical ventilation'],
+  'Anything that limits breathing traps CO₂: chest injury, sleep apnea, obesity, opioids, stroke, PE, ARDS.');
+Q('ab', 'Which condition can cause respiratory ALKALOSIS?',
+  ['Travel to high altitude', 'Opioid overdose', 'Obstructive sleep apnea', 'End-stage COPD'],
+  'At altitude the body breathes faster to get oxygen and blows off CO₂. Also: anxiety, salicylate toxicity, sepsis, early asthma.');
+Q('ab', 'Which skin finding is listed for metabolic acidosis?',
+  ['Warm, dry, pink skin', 'Cold, clammy, cyanotic skin', 'Yellow (jaundiced) skin', 'Mottled, sweaty skin'],
+  'Other cues: Kussmaul breathing, hypotension, weak pulses, bradycardia, dysrhythmias, headache, drowsiness.');
+Q('ab', 'Which set of findings fits respiratory acidosis?',
+  ['Tachycardia, increased BP, anxiety or confusion, pale or cyanotic skin', 'Numbness, tingling and tinnitus', 'Warm pink skin and Kussmaul breathing', 'Tetany and hyperreflexia'],
+  'Severe cases can progress to bradycardia, dysrhythmias and coma.');
+Q('ab', 'Which intervention fits respiratory alkalosis from anxiety?',
+  ['Calming techniques and anxiolytics as ordered', 'Sodium bicarbonate IV', 'Insulin drip', 'Hold all oxygen'],
+  'Also do a toxic screen if salicylate (aspirin) poisoning is possible. Treat the underlying cause.');
+Q('ab', 'A client with NG suction has metabolic alkalosis. Which ordered medicine reduces hydrogen chloride loss?',
+  ['An IV proton pump inhibitor', 'An antacid', 'Sodium bicarbonate', 'A loop diuretic'],
+  'Less acid made = less acid sucked out. Also replace electrolytes, monitor the heart and treat nausea.');
+Q('ab', 'Which medication is listed as a treatment for metabolic alkalosis?',
+  ['Acetazolamide (carbonic anhydrase inhibitor)', 'Sodium bicarbonate', 'Calcium carbonate', 'Magnesium hydroxide'],
+  'Acetazolamide helps the kidneys get rid of bicarbonate. Also hold antacids and use fall precautions.');
+Q('ab', 'Which cause produces a NORMAL anion gap metabolic acidosis?',
+  ['Diarrhea', 'DKA', 'Salicylate poisoning', 'Lactic acidosis'],
+  'Normal gap = bicarbonate is lost (diarrhea, fistulas, chloride-heavy fluids). High gap = acid is added.');
+Q('ab', 'If the anion gap is calculated WITH potassium (Na⁺ + K⁺ − (Cl⁻ + HCO₃⁻)), what is normal?',
+  ['12 – 16', '8 – 12', '22 – 26', '35 – 45'],
+  'Without K⁺ the normal range is 8–12, which is the preferred equation.');
+Q('ab', 'In chronic metabolic acidosis, why correct calcium before bicarbonate?',
+  ['To avoid tetany as pH rises', 'Calcium raises the pH faster', 'Bicarbonate is toxic with normal calcium', 'Calcium lowers potassium'],
+  'Raising the pH lowers ionized calcium. If calcium is already low, the client can develop tetany.');
+Q('ab', 'In metabolic acidosis (before full compensation), potassium is usually:',
+  ['Elevated, because K⁺ shifts out of cells', 'Low, because of vomiting', 'Normal in every case', 'Unrelated to pH'],
+  'H⁺ moves into cells and K⁺ moves out, like swapping seats. Watch the ECG.');
+Q('ab', 'Which of these causes metabolic ALKALOSIS?',
+  ['Loop or thiazide diuretic use with potassium loss', 'Profuse diarrhea', 'Starvation', 'Kidney failure'],
+  'Also: vomiting, NG suction, antacids, TPN, transfusions and digitalis toxicity.');
+Q('ab', 'Which drugs help treat respiratory acidosis from bronchospasm?',
+  ['Bronchodilators and corticosteroids to open airways', 'Opioids for comfort', 'Sodium bicarbonate', 'Diuretics'],
+  'Also stop opioids as needed, reposition, teach deep breathing, and give oxygen or ventilator support if in distress.');
+
+/* ---------------- VENTILATION, DKA & K⁺ + CLINICAL JUDGMENT (more) ---------------- */
+Q('vent', 'Caputi Step 1, "Getting the information," matches which NCSBN step?',
+  ['Recognize cues', 'Analyze cues', 'Take actions', 'Evaluate outcomes'],
+  'Step 1 asks "What do I notice?" It matches Assessment in the nursing process.');
+Q('vent', 'Caputi Step 2, "Making meaning of the information," asks:',
+  ['"What does this mean?"', '"What should I do?"', '"Did it work?"', '"What do I notice?"'],
+  'It matches NCSBN Analyze cues and Diagnosis in the nursing process. ABG pattern reading lives here.');
+Q('vent', 'Caputi Step 5, "Evaluating outcomes," matches which nursing process step?',
+  ['Evaluation', 'Assessment', 'Planning', 'Implementation'],
+  'It asks "Did it work?" Always reassess after an action.');
+Q('vent', 'According to the Caputi model, before a nurse can take action they must:',
+  ['Recognize, analyze and prioritize', 'Call the provider', 'Document the findings', 'Get a second opinion'],
+  'You cannot fix what you have not noticed or understood.');
+Q('vent', 'How does the deck compare the nursing process and clinical judgment?',
+  ['The nursing process is the roadmap; clinical judgment is how you drive', 'They are unrelated', 'Clinical judgment replaces the nursing process', 'The nursing process is only for students'],
+  'Same thinking, different vocabularies.');
+Q('vent', 'Why can\'t a bronchodilator fix ineffective breathing (RR 4/min, unresponsive)?',
+  ['The problem is not narrowed airways; the client is not moving enough air and needs assisted breaths', 'Bronchodilators only work orally', 'Bronchodilators raise CO₂', 'It would work if given twice'],
+  'Bronchodilators open tight airways. They cannot make someone breathe.');
+Q('vent', 'In DKA, which data does the team use to judge that ketoacidosis has resolved?',
+  ['Ketone and pH/HCO₃⁻ criteria, plus circulation and clinical response', 'Glucose below 200 alone', 'The client saying they feel better', 'Potassium above 5.0'],
+  'A falling glucose shows a response, but it is not the finish line.');
+Q('vent', 'With vomiting or gastric suction, what leaves the body along with acid?',
+  ['Fluid and potassium', 'Bicarbonate only', 'Glucose', 'Calcium only'],
+  'H⁺ and Cl⁻ leave, so HCO₃⁻ rises. Fluid and K⁺ loss weakens circulation and muscles.');
+Q('vent', 'Which statement matches the deck\'s red-flag rule?',
+  ['A single normal value never cancels deterioration somewhere else', 'One normal lab means the client is stable', 'Only vital signs matter', 'Wait for two abnormal labs before acting'],
+  'Act now and get help, even if one number looks stable.');
+Q('vent', 'Which change during insulin therapy for DKA is a red flag?',
+  ['Potassium falling', 'Glucose slowly falling', 'Urine output steady', 'Client becoming more alert'],
+  'Falling K⁺ during insulin is dangerous for the heart rhythm.');
+Q('vent', 'According to the deck, every clinical decision needs:',
+  ['A finding, an action and a reassessment', 'A provider order only', 'A lab value only', 'A family member present'],
+  '"Monitor the client" alone is never a complete answer.');
+Q('vent', 'Which pair is the deck\'s "four distinctions" warning?',
+  ['SpO₂ ≠ ventilation', 'pH = PaCO₂', 'Glucose = potassium safety', 'Comfort = source stopped'],
+  'The four: compensation ≠ recovery, SpO₂ ≠ ventilation, glucose ≠ potassium safety, comfort ≠ source stopped.');
+
+/* ---------------- MOUTH & ESOPHAGUS (more) ---------------- */
+Q('mouth', 'Primary stomatitis is usually caused by:',
+  ['A virus or injury (canker sores, cold sores)', 'Bacterial overgrowth', 'Fungal infection only', 'Chemotherapy only'],
+  'Secondary stomatitis is overgrowth or infection, like thrush.');
+Q('mouth', 'What is recurrent aphthous stomatitis (RAS)?',
+  ['Recurrent canker sores', 'Oral cancer', 'Thrush', 'Dry mouth after radiation'],
+  'Aphthous ulcers are canker sores that keep coming back.');
+Q('mouth', 'Which vitamin deficiencies can cause stomatitis?',
+  ['B vitamins and vitamin C', 'Vitamin D and calcium', 'Vitamin K', 'Vitamin A only'],
+  'Other causes: chemotherapy, recent infection, poor oral hygiene, allergies, tobacco, alcohol.');
+Q('mouth', 'Which foods should a client with stomatitis choose?',
+  ['Soft, bland foods high in vitamin C and protein', 'Spicy and acidic foods', 'Crunchy, hard foods', 'Citrus juices and hot sauce'],
+  'Avoid spicy and acidic foods that irritate the sores.');
+Q('mouth', 'Which lesion is a classic cue for oral cancer?',
+  ['A painless, hardened ulcer with raised edges', 'A painful cold sore on the lip', 'White plaque that scrapes off', 'A bleeding gum after flossing'],
+  'Later: a painless sore that bleeds easily and does not heal.');
+Q('mouth', 'What is trismus?',
+  ['Limited jaw motion', 'Painful swallowing', 'Excess saliva', 'Loss of taste'],
+  'It can be a later cue of oral or pharyngeal cancer.');
+Q('mouth', 'Which teaching helps PREVENT oral cancer?',
+  ['Avoid tobacco and alcohol, protect lips from the sun, and avoid HPV exposure', 'Use alcohol mouthwash daily', 'Brush with a hard toothbrush', 'Eat more salted foods'],
+  'Oral cancer is curable if found early, but early stages often have no symptoms.');
+Q('mouth', 'Which structures are removed in a radical neck dissection?',
+  ['Cervical lymph nodes, sternocleidomastoid muscle, internal jugular vein and spinal accessory nerve', 'The tongue and jaw only', 'The thyroid and parathyroid glands', 'The esophagus and stomach'],
+  'Because so much is removed, watch airway, bleeding, infection and neck range of motion.');
+Q('mouth', 'After neck dissection, why should the client avoid the Valsalva maneuver?',
+  ['To protect the graft and the carotid artery', 'To prevent constipation', 'To lower blood glucose', 'To improve speech'],
+  'Straining raises pressure in the neck vessels.');
+Q('mouth', 'After oral surgery, the nurse hears new wheezing. What could it mean?',
+  ['Aspiration', 'Normal healing', 'Dehydration', 'Pain only'],
+  'Wheezing may mean aspiration; stridor may mean obstruction. Keep suction at the bedside.');
+Q('mouth', 'Which test can help diagnose a hiatal hernia?',
+  ['Barium swallow', 'Urinalysis', 'Echocardiogram', 'Lumbar puncture'],
+  'Abdominal x-ray and CT are also used. Risks include twisting, strangulation or obstruction.');
+Q('mouth', 'Which is a risk factor for esophageal tumors?',
+  ['Untreated GERD', 'High-fiber diet', 'Regular exercise', 'Low-salt diet'],
+  'Also: alcohol, smoking, obesity, malnutrition and diets high in nitrates or low in fruits and vegetables.');
+Q('mouth', 'After treatment for oral cancer, how often should the client see a dentist?',
+  ['At least twice a year', 'Only if pain occurs', 'Every 5 years', 'Never again'],
+  'Ongoing oral care lowers infection risk and catches new lesions early.');
+
+/* ---------------- ULCERS, GASTRITIS & GI BLEED (more) ---------------- */
+Q('stomach', 'Bright red blood in the stool is called:',
+  ['Hematochezia', 'Melena', 'Hematemesis', 'Hemoptysis'],
+  'Melena (black, tarry) usually means an upper GI source. Hematochezia is often lower, or a brisk upper bleed.');
+Q('stomach', 'When documenting hematemesis, what should the nurse describe?',
+  ['Color (bright red or altered), amount and timing, plus circulation findings', 'Only the color', 'Only the time', 'Nothing until the provider arrives'],
+  'Check pulse, BP and perfusion at the same time.');
+Q('stomach', 'Which statement about pain after endoscopy is correct?',
+  ['Mild discomfort should stay mild and improve; worsening pain with vital sign changes is urgent', 'Severe pain is always expected', 'Pain never occurs after endoscopy', 'Any pain should be ignored for 24 hours'],
+  'Worsening pain could mean perforation.');
+Q('stomach', 'A classmate says, "Night pain means a duodenal ulcer, so we know the diagnosis." What is the safer thinking?',
+  ['Timing is useful history, but diagnosis needs broader assessment and evaluation', 'Correct, no further testing needed', 'Night pain means a gastric ulcer', 'Night pain rules out an ulcer'],
+  'Symptoms guide the history; tests like EGD confirm.');
+Q('stomach', 'Which causes EROSIVE acute gastritis?',
+  ['Long-term NSAIDs, alcohol, steroids or gastric radiation', 'H. pylori only', 'Vitamin C deficiency', 'Low-fat diet'],
+  'H. pylori is the main NON-erosive cause.');
+Q('stomach', 'Which test is used to diagnose gastritis and peptic ulcers?',
+  ['EGD (esophagogastroduodenoscopy)', 'Colonoscopy', 'Chest x-ray', 'Echocardiogram'],
+  'A scope lets the provider see, biopsy and sometimes treat the lining.');
+Q('stomach', 'Which is a gastritis prevention tip from the slides?',
+  ['Avoid excessive coffee, even decaf', 'Take aspirin daily', 'Drink alcohol with meals', 'Skip meals to rest the stomach'],
+  'Also: limit alcohol, avoid large NSAID or steroid doses, stop tobacco, manage stress, use safe food and water.');
+Q('stomach', 'Pain that starts right after eating suggests which type of ulcer?',
+  ['Gastric ulcer', 'Duodenal ulcer', 'Stress ulcer', 'Esophageal varices'],
+  'Gastric ulcers are in the lower stomach and often relate to acid backflow or pyloric sphincter dysfunction.');
+Q('stomach', 'When are H2 blockers (famotidine) used for ulcers?',
+  ['When the ulcer is not linked to H. pylori, usually for 6–8 weeks', 'Only for H. pylori, for 3 days', 'Only during a GI bleed', 'Never for ulcers'],
+  'PPIs are usually given for 4–8 weeks.');
+Q('stomach', 'Which teaching tells a PUD client to seek care right away?',
+  ['Red or coffee-ground vomit, or bloody or black stools', 'Mild bloating after a large meal', 'Occasional burping', 'Feeling hungry before meals'],
+  'Also sharp, sudden, persistent abdominal pain.');
+Q('stomach', 'Which is an EARLY symptom of gastric cancer?',
+  ['Dyspepsia that is first relieved by antacids', 'Palpable epigastric mass', 'Severe weight loss', 'Enlarged lymph nodes'],
+  'Advanced signs: N/V, iron-deficiency anemia, palpable mass, enlarged nodes, progressive weight loss.');
+Q('stomach', 'In an older adult with an upper GI bleed, which change may be an early sign?',
+  ['Acute confusion', 'Increased appetite', 'Bradycardia with high BP', 'Weight gain'],
+  'Also vertigo, dizziness, syncope, weak pulses, low BP and high HR.');
+Q('stomach', 'What is the purpose of gastric lavage in an upper GI bleed?',
+  ['To detect blood and decompress the stomach', 'To give nutrition', 'To deliver antibiotics', 'To relieve constipation'],
+  'EGD is then used to verify, cauterize or clip the bleed.');
+Q('stomach', 'Which is a MOTILITY cause of gastric outlet obstruction?',
+  ['Gastroparesis from diabetes', 'A peptic ulcer scar', 'A gastric tumor', 'A swallowed object'],
+  'Mechanical causes are scarring from PUD or cancer.');
+Q('stomach', 'Which is a complication of peptic ulcer disease?',
+  ['Pyloric obstruction', 'Hyperthyroidism', 'Kidney stones', 'Cataracts'],
+  'Others: hemorrhage, perforation, peritonitis and hypotension.');
+
+/* ---------------- GERD, B12 & DUMPING (more) ---------------- */
+Q('gerd', 'What is GERD?',
+  ['Backflow of gastric or duodenal contents into the esophagus, injuring its lining', 'An ulcer in the duodenum', 'Inflammation of the colon', 'A stomach tumor'],
+  'Like a one-way door (the LES) that does not close all the way.');
+Q('gerd', 'Which is a key risk factor for GERD?',
+  ['An incompetent lower esophageal sphincter (LES)', 'Low-fat diet', 'Young age', 'Daily walking'],
+  'Others: hiatal hernia, motility disorders, COPD, asthma, tobacco, coffee, alcohol, H. pylori.');
+Q('gerd', 'What is odynophagia?',
+  ['Painful swallowing', 'Difficulty swallowing', 'Heartburn', 'Excess saliva'],
+  'Dysphagia = difficulty swallowing. Pyrosis = heartburn. Water brash = hypersalivation.');
+Q('gerd', 'Which GERD symptoms tend to happen at night?',
+  ['Coughing, hoarseness or wheezing', 'Diarrhea and cramping', 'Fever and chills', 'Blurred vision'],
+  'Lying down lets acid move up toward the throat and airway.');
+Q('gerd', 'After eating, how long should a client with GERD stay upright?',
+  ['1–2 hours', '5 minutes', '6 hours', 'No need to stay upright'],
+  'And finish the last meal 2–3 hours before bed.');
+Q('gerd', 'Which drinks should a client with GERD avoid?',
+  ['Caffeine, alcohol and carbonated drinks', 'Water', 'Low-fat milk in small amounts', 'Herbal tea without mint'],
+  'Also limit acidic, spicy and fried foods.');
+Q('gerd', 'How should the nurse handle GERD food triggers?',
+  ['Have the client record foods and symptoms and review the triggers that repeat for them', 'Give every client the same long list of banned foods', 'Ignore diet completely', 'Tell the client to stop eating after noon'],
+  'Triggers are personal; a generic list may not fit.');
+Q('gerd', 'Long-term PPIs can interact with which medicines?',
+  ['Clopidogrel and diuretics', 'Acetaminophen and vitamin C', 'Insulin and metformin', 'Penicillin and amoxicillin'],
+  'Chronic PPI use also raises fracture and C. diff risk.');
+Q('gerd', 'What does a client receive before an EGD scope is inserted?',
+  ['Light sedation and a numbing throat spray', 'General anesthesia and a chest tube', 'A barium drink', 'A full meal'],
+  'Afterward: airway monitoring, aspiration precautions and a gag check before eating.');
+Q('gerd', 'Which is an example of an antacid?',
+  ['Calcium carbonate', 'Famotidine', 'Omeprazole', 'Metoclopramide'],
+  'Others: magnesium hydroxide and aluminum hydroxide. Famotidine is an H2 blocker; omeprazole is a PPI.');
+Q('gerd', 'Why does dumping syndrome happen after gastric surgery?',
+  ['Food and sugar reach the small intestine too fast', 'The stomach makes too much acid', 'The client eats too little', 'The esophagus narrows'],
+  'Follow the individualized surgical and dietitian plan.');
+Q('gerd', 'Which symptoms suggest vitamin B12 deficiency?',
+  ['Fatigue, tingling and gait changes', 'Fever and rash', 'Weight gain and high BP', 'Increased thirst'],
+  'Nerve symptoms come from low B12 over time.');
+Q('gerd', 'Which surface agent preserves the mucosal barrier and is given on an empty stomach?',
+  ['Sucralfate', 'Pantoprazole', 'Metoclopramide', 'Calcium carbonate'],
+  'Give 1 hour before or 2 hours after meals, and 30 minutes apart from antacids.');
+
+/* ---------------- ENTERAL & PARENTERAL NUTRITION (more) ---------------- */
+Q('tube', 'Who chooses the tube-feeding formula?',
+  ['The registered dietitian, working with the provider and RN', 'The client alone', 'The pharmacy technician', 'Any nurse on the unit'],
+  'Specialty formulas exist for diseases such as diabetes and kidney disease.');
+Q('tube', 'What is the goal of tube feeding?',
+  ['Positive nitrogen balance and weight maintenance or gain without discomfort or diarrhea', 'Rapid weight loss', 'Bowel rest', 'Lowering blood glucose'],
+  'Positive nitrogen balance means the body is building, not breaking down, protein.');
+Q('tube', 'Why use the gut (enteral) instead of IV nutrition when possible?',
+  ['It helps preserve normal intestinal and liver metabolism', 'It has no aspiration risk', 'It never needs flushing', 'It works without a functioning GI tract'],
+  'If the gut works, use it.');
+Q('tube', 'A tube that goes through the nose into the jejunum is called:',
+  ['Nasojejunal (NJ)', 'Nasogastric (NG)', 'Gastrostomy (G-tube)', 'Jejunostomy (J-tube)'],
+  'NG = stomach, ND = duodenum, NJ = jejunum. G-tube and J-tube go through the abdominal wall.');
+Q('tube', 'When is a jejunostomy chosen?',
+  ['When the gastric route is not accessible, or to lower aspiration risk when the stomach does not work', 'For short-term feeding under 1 week', 'Only for medicine', 'When the client can eat normally'],
+  'Small-bowel feedings are usually continuous.');
+Q('tube', 'What is a low-profile gastrostomy device (MIC-KEY button)?',
+  ['A device that sits at skin level for intermittent access and is easy to conceal', 'A nasal tube', 'A central IV line', 'A permanent stomach stapling'],
+  'It interferes very little with clothing.');
+Q('tube', 'Which signs suggest infection at a feeding tube site?',
+  ['Redness, warmth, swelling or drainage', 'Pale, dry skin', 'Cool skin with no drainage', 'Hair growth around the site'],
+  'Teach site care and signs of complications.');
+Q('tube', 'Which labs are monitored for a client on tube feedings?',
+  ['Kidney function, H/H, serum protein, prealbumin, electrolytes and glucose', 'TSH and T4 only', 'Lipase only', 'Troponin only'],
+  'Prealbumin reflects recent nutrition status.');
+Q('tube', 'Which findings suggest DEHYDRATION in a tube-fed client?',
+  ['Dry mucous membranes, thirst and low urine output', 'Sudden weight gain and edema', 'Crackles in the lungs', 'Bounding pulses'],
+  'Water flushes help prevent hypertonic dehydration.');
+Q('tube', 'Which statement about feeding access is correct?',
+  ['Having a feeding tube does not remove aspiration risk', 'A G-tube eliminates aspiration risk', 'Tube location never needs checking', 'Any medicine can be crushed for a tube'],
+  'Verify tube location and check the medicine\'s dosage form as separate safety checks.');
+Q('tube', 'What does partial parenteral nutrition contain?',
+  ['Lipids', 'Only water', 'Formula through an NG tube', 'Only insulin'],
+  'TPN contains lipids, proteins, electrolytes, dextrose, insulin and minerals.');
+Q('tube', 'How is a bolus tube feeding usually given?',
+  ['Total daily volume split into 4–6 feeds, by gravity through a 50 mL syringe', 'One large feed once a day', 'By IV push', 'Continuously by pump only'],
+  'Start slowly and increase as tolerated.');
+Q('tube', 'Besides nutrition, what else can a gastrostomy be used for?',
+  ['Decompression (gastroparesis, GERD, obstruction)', 'Dialysis', 'Blood draws', 'Urine drainage'],
+  'It can deliver fluids and medicines too.');
+Q('tube', 'Which client is most at risk for aspiration during tube feeding?',
+  ['A client lying flat with abdominal distention and vomiting', 'A client sitting at 45 degrees with soft abdomen', 'A client with a G-tube and normal bowel sounds', 'A client between feedings with HOB at 30 degrees'],
+  'Hold the feeding for distention and keep the HOB at least 30 degrees.');
+
+/* ---------------- PITUITARY & ADRENAL (more) ---------------- */
+Q('pit', 'What does ADH (antidiuretic hormone) do?',
+  ['Tells the kidneys to keep water, so urine output drops', 'Tells the kidneys to lose water', 'Raises blood glucose', 'Lowers potassium'],
+  'Anti-diuretic = against urination.');
+Q('pit', 'What is aquaresis?',
+  ['The kidneys removing water only, not sodium', 'Losing sodium and water together', 'Retaining water', 'Excreting glucose'],
+  'ADH blockers like tolvaptan cause aquaresis, so sodium concentration rises.');
+Q('pit', 'Which assessments are key for a client on desmopressin?',
+  ['Urine output, sodium, daily weight and neuro status', 'Blood glucose only', 'Liver tests only', 'Hearing and vision'],
+  'Watch for weight gain, nausea, headache, confusion and seizures.');
+Q('pit', 'For water-balance drugs, which data should be looked at together?',
+  ['Sodium trend, daily weight, I&O, BP and mental status', 'Urine output only', 'Heart rate only', 'Temperature only'],
+  'Urine output alone never tells the whole story.');
+Q('pit', 'How should daily weights be done?',
+  ['Same scale, same time each day', 'Different scales to compare', 'Only when edema appears', 'Once a week'],
+  'Consistency makes the trend meaningful.');
+Q('pit', 'A child on somatropin develops a limp and knee pain. What should the nurse do?',
+  ['Assess and report it', 'Increase the dose', 'Tell the family it is growing pains', 'Stop the drug without telling anyone'],
+  'Hip or knee pain or limp is a listed adverse effect.');
+Q('pit', 'On somatropin, growth improved but the child has a new headache and rising glucose. Best action?',
+  ['Assess and report; do not increase the dose', 'Increase the dose because it is working', 'Ignore it; this is expected', 'Give extra insulin on your own'],
+  'Working ≠ safe. Headache may signal raised ICP.');
+Q('pit', 'Why can infection be easy to miss in a client on glucocorticoids?',
+  ['Steroids suppress inflammation, so signs like fever may be hidden', 'Steroids cure infections', 'Steroids raise WBCs to normal', 'Infections do not happen on steroids'],
+  'Check temperature, wounds and subtle changes closely.');
+Q('pit', 'On prednisone, joint pain is better, but there is wound drainage and glucose went from 138 to 264. What is the concern?',
+  ['Possible infection and hyperglycemia', 'The drug is working; no concern', 'Hypoglycemia', 'Adrenal crisis'],
+  'Report both findings.');
+Q('pit', 'What is adrenal suppression?',
+  ['After long steroid use, the body makes less of its own cortisol', 'Too much cortisol from a tumor', 'Low sodium from desmopressin', 'Low thyroid hormone'],
+  'That is why stopping steroids suddenly is dangerous.');
+Q('pit', 'A client on fludrocortisone has BP improving but new muscle weakness. What should the nurse suspect?',
+  ['Low potassium', 'High potassium', 'High calcium', 'Low glucose'],
+  'Fludrocortisone keeps sodium and loses potassium.');
+Q('pit', 'Glucocorticoids combined with a potassium-wasting diuretic can cause:',
+  ['Deeper hypokalemia', 'Hyperkalemia', 'Hypoglycemia', 'Hypocalcemia only'],
+  'Both drugs push potassium out.');
+Q('pit', 'Which "job" does levothyroxine, insulin or desmopressin do in the Module 7 big picture?',
+  ['Replace a missing hormone', 'Suppress too much hormone', 'Relax smooth muscle', 'Treat infection'],
+  'The six jobs: replace, suppress, stimulate, relax, treat infection, relieve symptoms.');
+Q('pit', 'What is the "golden rule" of Module 7?',
+  ['Working ≠ safe: a drug can do its job and still cause a new problem', 'If it works, it is safe', 'Always increase the dose when symptoms persist', 'Lab values matter more than symptoms'],
+  'Look at the benefit and the harm separately every time.');
+
+/* ---------------- THYROID & CALCIUM (more) ---------------- */
+Q('thy', 'A client on levothyroxine has a LOW TSH. What does this suggest?',
+  ['Too much thyroid hormone (overdosed)', 'Underdosed', 'Hypothyroidism is getting worse', 'The drug is not being absorbed'],
+  'The pituitary is "quiet" because there is plenty of hormone.');
+Q('thy', 'Which finding shows methimazole is working?',
+  ['Pulse slowing (112 → 88) and less heat intolerance', 'Weight loss and palpitations', 'Fever and sore throat', 'Tingling around the mouth'],
+  'Methimazole blocks thyroid hormone production.');
+Q('thy', 'Which statement about methimazole is correct?',
+  ['It suppresses thyroid hormone; it does not replace it', 'It replaces T4', 'It raises calcium', 'It treats hypothyroidism'],
+  'Do not treat methimazole as replacement therapy.');
+Q('thy', 'A night-shift worker takes levothyroxine. When should they take it?',
+  ['30–60 minutes before the first meal of their day', 'At 8 a.m. no matter when they sleep', 'With their largest meal', 'Right before sleep with iron'],
+  'Same rule, shifted to their day. Move iron 4 hours away.');
+Q('thy', 'Levothyroxine is used to treat:',
+  ['Hypothyroidism', 'Hyperthyroidism', 'Hyperparathyroidism', 'Diabetes insipidus'],
+  'It replaces T4 to restore normal metabolism.');
+Q('thy', 'What is the Chvostek sign?',
+  ['A facial twitch when the facial nerve is tapped (low calcium)', 'A carpal spasm with a BP cuff', 'A rash on the cheeks', 'Eye bulging'],
+  'Trousseau sign = carpal spasm when a BP cuff is inflated.');
+Q('thy', 'Cinacalcet is commonly used for which clients?',
+  ['Clients with hyperparathyroidism, often on dialysis', 'Clients with hypothyroidism', 'Clients with diabetes', 'Clients with osteoporosis only'],
+  'It lowers PTH and blood calcium.');
+Q('thy', 'On cinacalcet, earlier calcium improved, but today the client has hand spasms. Best action?',
+  ['Check the current calcium', 'Give the next dose; earlier labs were good', 'Give a laxative', 'Ignore it'],
+  'Earlier good results do not rule out low calcium now.');
+Q('thy', 'Which ECG change can occur with hypocalcemia?',
+  ['Prolonged QT interval', 'Peaked T waves', 'Shortened PR interval', 'Delta waves'],
+  'Severe hypocalcemia can also cause seizures and dysrhythmias.');
+Q('thy', 'What is a key risk of PTU?',
+  ['Liver injury', 'Hyperkalemia', 'Kidney stones', 'Hearing loss'],
+  'PTU is still preferred in the 1st trimester.');
+Q('thy', 'How long does a client with hypothyroidism usually take levothyroxine?',
+  ['Lifelong', '2 weeks', 'Until symptoms improve', 'Only in winter'],
+  'Teach the client not to stop it.');
+Q('thy', 'A client on levothyroxine reports chest pain and palpitations. What should the nurse consider?',
+  ['Signs of too much thyroid hormone; assess and report', 'Expected effect; continue as usual', 'Signs of too little hormone', 'Unrelated to the drug'],
+  'Cardiac clients and older adults are most at risk.');
+Q('thy', 'Where does TSH come from?',
+  ['The pituitary gland', 'The thyroid gland', 'The adrenal glands', 'The pancreas'],
+  'Hypothalamus (TRH) → pituitary (TSH) → thyroid (T3/T4).');
+
+/* ---------------- INSULIN & DIABETES MEDS (more) ---------------- */
+Q('dm', 'Which is a risk factor for hypoglycemia?',
+  ['Poor food intake during an insulin peak', 'An infection', 'Starting prednisone', 'A missed insulin dose'],
+  'Others: sulfonylureas, exercise and alcohol. The other choices raise glucose.');
+Q('dm', 'Which signs suggest HYPERglycemia?',
+  ['Thirst, frequent urination, fatigue and blurred vision', 'Sweating, shaking and hunger', 'Slow pulse and cold skin', 'Hand spasms'],
+  'Check the trend, hydration and ketones per protocol.');
+Q('dm', 'Which factors can raise blood glucose?',
+  ['Illness, infection, stress, steroids and missed doses', 'Exercise and fasting', 'Alcohol and sulfonylureas', 'Beta blockers'],
+  'Sick days often need closer glucose checks.');
+Q('dm', 'What does basal insulin do?',
+  ['Covers background needs between meals and overnight', 'Covers only the carbs in a meal', 'Treats hypoglycemia', 'Works only when eating'],
+  'The body still needs it when not eating.');
+Q('dm', 'Before giving prandial (mealtime) insulin, the nurse should:',
+  ['Check glucose, confirm the meal tray is here, then give the exact ordered product', 'Give it at a set time no matter what', 'Give it after the client finishes eating any time later', 'Skip the glucose check'],
+  'Food must be ready because rapid-acting insulin starts fast.');
+Q('dm', 'Put insulin in order from fastest to longest acting:',
+  ['Rapid → short (Regular) → intermediate (NPH) → long', 'NPH → Regular → rapid → long', 'Long → NPH → Regular → rapid', 'Regular → rapid → long → NPH'],
+  'Learn the order and when each peaks.');
+Q('dm', 'Which long-acting insulin lasts LONGER than 24 hours?',
+  ['Degludec', 'Lispro', 'Regular', 'NPH'],
+  'Glargine and detemir last about 24 hours.');
+Q('dm', 'How does metformin lower glucose?',
+  ['The liver releases less glucose and the body responds better to insulin', 'It squeezes more insulin out of the pancreas', 'It makes the kidneys dump glucose', 'It slows carb digestion in the gut'],
+  'Used alone, it has a low hypoglycemia risk.');
+Q('dm', 'How do GLP-1 agonists (liraglutide, semaglutide) work?',
+  ['Glucose-dependent insulin release and slower stomach emptying', 'They block glucose absorption in the kidneys', 'They replace basal insulin', 'They stop the liver from making glucose'],
+  'Nausea is common; watch for pancreatitis.');
+Q('dm', 'How do SGLT2 inhibitors (empagliflozin) lower glucose?',
+  ['The kidneys dump glucose in the urine', 'They increase insulin release', 'They slow stomach emptying', 'They block carb digestion'],
+  'Sugar in urine explains the UTIs and yeast infections.');
+Q('dm', 'How does acarbose work?',
+  ['Slows carbohydrate digestion', 'Increases insulin release', 'Blocks liver glucose output', 'Replaces insulin'],
+  'That is why it is taken with the first bite of a meal and gas is common.');
+Q('dm', 'Before starting liraglutide, a client says "my parent had thyroid surgery." What should the nurse do?',
+  ['Ask what type of cancer, whether it was medullary (MTC), and about MEN2; get the record', 'Refuse to give it ever', 'Give it; surgery history does not matter', 'Switch to another drug yourself'],
+  'Report the concern before the first dose if MTC or MEN2 is confirmed.');
+Q('dm', 'Which statement about diabetes drugs is correct?',
+  ['A drug class predicts effects, but the exact product determines the warning', 'All drugs in a class have identical warnings', 'Product names do not matter', 'Only insulin has warnings'],
+  'Teach clients which symptom to report and what to do.');
+Q('dm', 'What is the safe approach to a client with high glucose?',
+  ['Check the trend, hydration, ketones per protocol and the prescribed correction plan', 'Give extra insulin you choose', 'Restrict all fluids', 'Wait until the next day'],
+  'Never invent a dose.');
+
+/* ---------------- REPRODUCTIVE MEDS (more) ---------------- */
+Q('repro', 'What is hormone replacement therapy (HRT) used for?',
+  ['Replacing estrogen in menopause', 'Preventing pregnancy only', 'Triggering ovulation', 'Treating BPH'],
+  'Cancer and clot risks differ by product; review each one.');
+Q('repro', 'Which are common, milder side effects of estrogen?',
+  ['Nausea, breast tenderness and spotting', 'Severe one-sided leg swelling', 'Sudden chest pain', 'Loss of vision'],
+  'The other choices are ACHES warning signs.');
+Q('repro', 'What should a client on hormonal therapy report?',
+  ['Abnormal bleeding or breast lumps', 'Mild bloating once', 'Feeling hungry', 'Dry skin'],
+  'Long-term use raises some cancer risks.');
+Q('repro', 'Which statement about emergency contraception is correct?',
+  ['It is time-sensitive; follow the product\'s guidance', 'It works best a week later', 'It must be taken with food only', 'It protects against STIs'],
+  'Take a private, respectful history.');
+Q('repro', 'Why does testosterone require hematocrit monitoring?',
+  ['It boosts red blood cell production', 'It destroys red blood cells', 'It causes bleeding', 'It lowers platelets'],
+  'Also watch fluid retention and prostate symptoms.');
+Q('repro', 'A man cannot void and has a distended bladder. What does this suggest?',
+  ['Acute urinary retention needing prompt follow-up', 'A normal finding with BPH', 'Dehydration', 'A UTI that needs only fluids'],
+  'Weak stream or dribbling needs assessment; inability to void is more urgent.');
+Q('repro', 'Tamsulosin combined with a PDE5 inhibitor can cause:',
+  ['An additive drop in blood pressure', 'High blood pressure', 'Hyperglycemia', 'Kidney stones'],
+  'Both relax smooth muscle in blood vessels. Rise slowly.');
+Q('repro', 'How do PDE5 inhibitors (sildenafil, tadalafil) work?',
+  ['They dilate blood vessels', 'They raise testosterone', 'They shrink the prostate', 'They block estrogen'],
+  'Side effects: headache, flushing and low BP.');
+Q('repro', 'A client on clomiphene reports blurred vision. What should the nurse do?',
+  ['Report it; vision changes are an adverse effect', 'Reassure them it is normal', 'Double the dose', 'Tell them to stop eating'],
+  'Also watch for pelvic bloating and ovarian hyperstimulation.');
+Q('repro', 'A client missed a birth control pill. What should the nurse teach?',
+  ['Follow that product\'s missed-dose rules and use backup when told to', 'Take 5 pills at once', 'Stop the pack and start over in a month', 'Missed pills never matter'],
+  'Take pills at the same time daily.');
+Q('repro', 'According to the deck, during a reproductive visit the real danger may be:',
+  ['Circulatory, such as a blood clot', 'Dental', 'Dermatologic only', 'Hearing loss'],
+  'Address circulatory findings first.');
+Q('repro', 'When taking a reproductive health history, the nurse should:',
+  ['Ask privately about tobacco, vascular history and prior hormone-sensitive cancer, without assuming risk from appearance', 'Guess risk based on how the client looks', 'Ask only about allergies', 'Ask in front of visitors to save time'],
+  'Private and respectful history-taking gets accurate answers.');
+
+/* ---------------- URINARY & BLADDER MEDS (more) ---------------- */
+Q('uri', 'Which adverse effect of oxybutynin is a special concern in older adults?',
+  ['Confusion', 'Hair loss', 'Weight gain', 'High blood sugar'],
+  'Antimuscarinic drugs can affect thinking in older adults.');
+Q('uri', 'What is the expected effect of oxybutynin?',
+  ['Relaxes the bladder: less urgency and fewer accidents', 'Makes the bladder contract', 'Kills bacteria', 'Turns urine orange'],
+  'It treats overactive bladder.');
+Q('uri', 'Why is bethanechol contraindicated in urinary obstruction?',
+  ['It makes the bladder squeeze hard against a blocked outlet', 'It relaxes the bladder too much', 'It causes kidney stones', 'It lowers potassium'],
+  'It works only when there is no blockage.');
+Q('uri', 'Bethanechol belongs to which drug class?',
+  ['Cholinergic', 'Antimuscarinic', 'Alpha blocker', 'PDE5 inhibitor'],
+  'Cholinergic effects = SLUDGE. Antidote: atropine.');
+Q('uri', 'Which teaching is correct for phenazopyridine?',
+  ['It can stain contact lenses and clothes', 'It is safe to take for months', 'It replaces antibiotics', 'Urine will turn blue'],
+  'Urine turns red-orange.');
+Q('uri', 'Before starting a UTI antibiotic, what should the nurse check?',
+  ['Allergies, kidney function, pregnancy and culture timing', 'Only the client\'s weight', 'Only blood glucose', 'Nothing, just give it'],
+  'Get the culture before the first dose when ordered.');
+Q('uri', 'Which UTI teaching is correct?',
+  ['Finish the whole antibiotic course and drink fluids unless restricted', 'Stop antibiotics when burning stops', 'Limit fluids to avoid urinating', 'Save leftover pills for next time'],
+  'Report fever, chills or flank pain.');
+Q('uri', 'A client on warfarin starts TMP-SMX. What should the nurse monitor?',
+  ['INR and bleeding', 'Blood glucose', 'TSH', 'Calcium'],
+  'TMP-SMX raises warfarin\'s effect.');
+Q('uri', 'Which statement reflects the deck\'s urinary teaching?',
+  ['Storage, emptying, infection and pain relief are separate goals; check each one', '"Less burning means the problem is solved"', '"Fewer accidents means the bladder is emptying"', 'Only pain relief matters'],
+  'A drug can fix one goal while another problem grows.');
+Q('uri', 'What is urinary retention?',
+  ['The bladder does not empty; small voids plus fullness or pressure', 'Leaking urine with coughing', 'Burning with urination', 'Red-orange urine'],
+  'Check the last void, bladder fullness and a bladder scan per protocol.');
+Q('uri', 'A client on nitrofurantoin notices brown urine. The nurse explains:',
+  ['This is an expected color change', 'This means kidney failure', 'Stop the drug right away', 'This means dehydration only'],
+  'Take nitrofurantoin with food.');
+Q('uri', 'Which Module 7 "job" does tamsulosin or oxybutynin do?',
+  ['Relax smooth muscle', 'Replace a hormone', 'Treat infection', 'Stimulate an action'],
+  'Bethanechol "stimulates." Phenazopyridine "relieves symptoms." Nitrofurantoin "treats infection."');
+Q('uri', 'Phenazopyridine fits which Module 7 "job"?',
+  ['Relieve symptoms without fixing the cause', 'Treat infection', 'Replace a hormone', 'Suppress a hormone'],
+  'It numbs the burning; the antibiotic treats the bug.');
